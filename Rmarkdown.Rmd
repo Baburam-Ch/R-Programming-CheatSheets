@@ -1,0 +1,47 @@
+---
+title: "Rmarkdown"
+author: "me"
+date: '2022-05-29'
+output: html_document
+---
+
+
+# List
+A list is an N-object which can contain many different types of elements inside it like vectors, functions and even another list inside it.
+
+```{r}
+list1 = list(c(2,3,4), 21.3, sin, TRUE)
+print(list1)
+
+```
+
+### Matrices
+A matrix is a two-dimensional rectangular data set. It can be created using a vector input to the matrix function.
+
+```{r}
+M <- matrix(c('a', 'a', 'b', 'c', 'b', 'a'), nrow=2, ncol=3, byrow=TRUE)
+print(M)
+```
+### Data Frame
+data frame  are created using data.frame() function
+
+```{r}
+BMI <- data.frame(
+  gender = c('Male', 'Male', 'Female'),
+  height = c(178, 157, 164),
+  weight = c(81, 80, 70),
+  age = c(48, 46, 44)
+)
+
+print(BMI)
+```
+```{r}
+
+install.packages("tidyverse")
+library(tidyverse)
+
+```
+
+```{r}
+mpg
+```
